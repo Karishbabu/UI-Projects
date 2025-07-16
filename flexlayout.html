@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav{
+            flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            background-color: aqua;
+            padding: 20px;
+        
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            flex: 3;
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            padding: 20px;
+            background-color: lightgreen;
+         }
+        section{
+            display: -webkit-flex;
+            display: flex;
+        }
+           
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+  }
+  @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+            }
+        }
+    
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <p>This is a simple example of a web page with a header.</p>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://techbinos.com/">Home</a></li>
+                <li><a href="iframe.html">Iframe Example</a></li>
+                <li><a href="fiesta.html">Fiesta Table</a></li>
+                <li><a href="class.html">Class Example</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+            <p>You can reach me at <a href="mailto:karishrenga@gmail.com"></a></p>
+        </article>
+        </section>  
+        <footer>
+        <p>&copy; 2023 My Web Page. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>
