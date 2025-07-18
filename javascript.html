@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="welcome">hello world </p>
+    <button onclick="sub()">Click Me</button>
+    <script>
+        function sub(){
+            document.getElementById("welcome").innerHTML = "Hello, JavaScript!";
+        }
+        function showdate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        function myfunction(){
+            document.getElementById("nature").src = "profile.image.jpeg";
+        }
+
+    </script>
+   <button onclick="showdate()"id="demo">Click display date and time</button>
+   <img src="food.jpeg"id="nature" alt="W3Schools.com" width="104" height="142">
+   <button onclick="myfunction()">Click to change image</button>
+   </button>
+</body>
+</html>
