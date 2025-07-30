@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            background-color: aqua;
+            padding: 20px;
+            height: 300px;
+        }
+        nav ul{
+         padding: 10;}
+         article{
+            float: left;
+            width: 40%;
+            padding: 20px;
+            background-color: lightgreen;
+            height: 300px;
+         }
+         section::after{
+            content: "";
+            display: table;
+            clear: both;
+         }
+         aside{
+            float: right;
+            width: 30%;
+            background-color: lightblue;
+            padding: 20px;
+            height: 300px;
+         }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            nav, article,aside {
+                width: 100%;
+                height: auto;
+            }
+        }
+ </style>
+</head>
+<body>
+    <h1 style="background-color: red;">box 1</h1>
+    <p>More progam and syntax available in the websites. Create a more websites.</p>
+    <header>
+        <h2>Welcome to the webpages of program</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a></li>
+                <li><a href="https://www.w3schools.com/css/css_layout.asp">CSS Layout</a></li>
+                <li><a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS Box Model</a></li>
+                <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Programs</h1>
+            <p>HTML Programs are used to create a webpages. It shows a webpages of 
+                good looking. It is used to create a webpages with the help of HTML and CSS.
+            </p>
+        </article>
+        <aside>
+            <h2>More Information</h2>
+            <p>For more information about HTML and CSS, visit the following links:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs - HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS</a></li>
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Web Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
