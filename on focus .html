@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" onfocus="functionto(this)"onblur="function1(this)">
+        <label for="Name">Enter your name</label>
+        <input type="text" onfocus="focusfunction(this)" onblur="blurfunction(this)">
+        <input type="text" name="email" id="email" placeholder="enter email id">
+        <p id="number"></p>
+        <input type="textarea" name="message" id="message" placeholder="enter your message">
+        </form>
+        <script>
+            function function1(a){
+                a.style.background="lightyellow";
+            }
+            function functionto(a){
+                f.style.background="lightblue";
+            }
+            function blurfunction(f){
+                f.style.background="red";
+            }
+            document.getElementById("email").addEventListener("focus", function() {
+                console.log("Email input focused");
+            });
+            document.getElementById("message").addEventListener("blur",function() {
+                alert("message input lost focus");
+            });
+            document.getElementById("email").addEventListener("blur", function() {
+                document.getElementById("number").innerText = "Email input lost focus";
+                  });
+
+        </script>
+</body>
+</html>

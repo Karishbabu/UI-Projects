@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Login Form</h1>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <button type="submit">Login</button><br>
+         <input type="text" name="email" id="email" placeholder="Enter your email">
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <button type="submit">Login</button>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, unde consequuntur sapiente, in laboriosam, adipisci natus similique accusamus numquam voluptates ipsa vel fugiat accusantium excepturi! Nulla sit non at ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sunt hic voluptates? Harum omnis exercitationem ut accusamus minus eligendi, maxime quos mollitia, accusantium odio veritatis reiciendis animi corrupti? Temporibus, quos.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, unde consequuntur sapiente, in laboriosam, adipisci natus similique accusamus numquam voluptates ipsa vel fugiat accusantium excepturi! Nulla sit non at ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sunt hic voluptates? Harum omnis exercitationem ut accusamus minus eligendi, maxime quos mollitia, accusantium odio veritatis reiciendis animi corrupti? Temporibus, quos.</p>
+        <p id="number">Number of times email input lost focus: 0</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, unde consequuntur sapiente, in laboriosam, adipisci natus similique accusamus numquam voluptates ipsa vel fugiat accusantium excepturi! Nulla sit non at ad.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, unde consequuntur sapiente, in laboriosam, adipisci natus similique accusamus numquam voluptates ipsa vel fugiat accusantium excepturi! Nulla sit non at ad.</p>
+         
+
+    </form>
+    <script>
+        document.getElementById("email").addEventListener("focus", function() {
+            console.log("Email input focused");
+        });
+
+        document.getElementById("password").addEventListener("blur", function() {
+            alert("Password input lost focus");
+        });
+         window.addEventListener("load", function() {
+             console.log("Page loaded");
+        });
+
+        document.getElementById("email").addEventListener("blur", function() {
+            document.getElementById("number").innerText = "Email input lost focus";
+        });
+        window.addEventListener("resize", function() {
+             console.log("window resized to+" + window.innerWidth+"px");
+             alert("Window resized to " + window.innerWidth + "px");
+
+        });
+        window.addEventListener("scroll", function() {
+            console.log("Page scrolled");
+        });
+        window.addEventListener("unload", function() {
+            console.log("Page unloaded");
+        });
+
+    </script>
+</body>
+</html>
