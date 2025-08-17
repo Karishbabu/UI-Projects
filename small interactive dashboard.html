@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <form action="">
+          <section id="num">
+            showing current width and height:</section>
+          <input type="text" name="keypressed" id="keypressed" placeholder="enter lastkeypressed">
+          <button onmouseover="add()" id="sub">click me</button>
+        </form>
+     <script>
+        window.addEventListener("resize",function(){
+            document.getElementById("num");
+            console.log("window resized to" + window.innerWidth+"px");
+            alert("window resized to" +window.innerWidth+"px");
+        });
+        document.getElementById("keypressed").addEventListener("keydown",function(){
+              console.log("keypressed:"+event.key);
+        });
+        function add(){
+           document.getElementById("sub").innerHTML="you clicked me";
+          
+        }
+    </script>
+</body>
+</html>
